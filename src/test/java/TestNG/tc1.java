@@ -18,6 +18,8 @@ public class tc1 {
 		  driver.manage().window().maximize();
 		  driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 		  driver.get("http://3.80.94.62:8080/DynamicJavaProject-Chat-Release-2.1/");
+		  driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+
 		  driver.navigate().to("www.javatpoint.com");  
 
 		}
@@ -30,11 +32,13 @@ public class tc1 {
 		  driver.findElement(By.id("lname")).sendKeys("Selenium");
 		  driver.findElement(By.id("submit")).sendKeys("9876543210");
 		  driver.findElement(By.xpath("//input[@class='submitbutton']")).click();
-		  
+		  driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+
 	  }
 	  
 	  @AfterMethod
 	  public void close() {
+
 		 driver.close();
  }
   }
