@@ -18,7 +18,8 @@ public class tc1 {
 		  driver.manage().window().maximize();
 		  driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 		  driver.get("http://3.80.94.62:8080/DynamicJavaProject-Chat-Release-2.1/");
-		
+		  driver.navigate().to("www.javatpoint.com");  
+
 		}
 		
 	  @Test
