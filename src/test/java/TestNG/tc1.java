@@ -17,7 +17,7 @@ public class tc1 {
 		  driver = new ChromeDriver();
 		  driver.manage().window().maximize();
 		  driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
-		  driver.get("http://3.85.26.53:8080/DynamicJavaProject-Chat-Release-2.1/");
+		  driver.get("http://3.80.94.62:8080/DynamicJavaProject-Chat-Release-2.1/");
 		
 		}
 		
