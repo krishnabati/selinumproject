@@ -28,12 +28,15 @@ public class tc1 {
 		  driver.findElement(By.id("fname")).sendKeys("Krishna");
 		  driver.findElement(By.id("lname")).sendKeys("Selenium");
 		  driver.findElement(By.id("submit")).sendKeys("9876543210");
-		  driver.findElement(By.xpath("//input[@class='submitbutton']")).click();
 		  driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+
+		  driver.findElement(By.xpath("//input[@class='submitbutton']")).click();
 	  }
 	  
 	  @AfterMethod
 	  public void close() {
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+
 		 driver.close();
  }
   }
